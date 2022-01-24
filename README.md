@@ -46,7 +46,7 @@ You can get the raw event data from the dataset API at REDACTED. The data set lo
    ]
  }` 
  
-2.Given this input data, we want to create a set of sessions of the incoming data. A sessions is defined as a group of events from a single visitor with no more than 10 minutes between each event. A visitor can have multiple sessions. So given the example input data above, we would expect output which looks like:
+2. Given this input data, we want to create a set of sessions of the incoming data. A sessions is defined as a group of events from a single visitor with no more than 10 minutes between each event. A visitor can have multiple sessions. So given the example input data above, we would expect output which looks like:
 `"sessionsByUser": {
    "f877b96c-9969-4abc-bbe2-54b17d030f8b": [
      {
@@ -78,8 +78,8 @@ You can get the raw event data from the dataset API at REDACTED. The data set lo
    ]
  }
  }`
- 
- 3. Some rules: 
+
+3. Some rules: 
  - Timestamps are in milliseconds.
  - Events may not be given in chronological order.
  - The visitors in sessionsByUser can be in any order.
